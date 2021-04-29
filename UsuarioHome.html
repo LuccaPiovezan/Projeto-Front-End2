@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+<link rel="stylesheet" type="text/css" href="WEcss/estilopages.css">
+</head>
+<body>
+	<header>
+		<div id="divLogotipoSistema">
+			<a href="">
+				<img src="WImagens/logo.png" id="imgLogotipoSistema"/>
+			</a>
+		</div>
+		
+		<div id="usuarioLogado">
+		Olá Nome do Usuário!
+		<br/>
+		<img src="WImagens/carrinho.png" id="imgIconeCarrinho">
+		
+		</div>
+	</header>
+	<br/><br/>
+	<!-- Fim do Cabeçalho -->
+
+	<div>
+		<h1>Bora matar essa fome!</h1>
+		<form method ="post" action ="">
+			<fieldset id=fieldsetfiltro>
+				<input type="text" name="busca" placeholder="Buscar por..."/>
+				<input type ="button" value="Procurar" onClick="location.href='UsuarioBusca.html';"/>
+			</fieldset>
+		</form>
+	</div>
+	
+	<div id="divCategoriasComidaGeral">
+		<div id="divCategoriaComidasOpcao">
+			<a href="#">
+				<img src="WImagens/churrasco1.png" id="imgCategoriaComida"/><br/>
+				<span>Churrasco</span>		
+			</a>
+		</div>
+		
+		<div id="divCategoriaComidasOpcao">
+			<a href="#">
+				<img src="WImagens/hamb.png" id="imgCategoriaComida"/><br/>
+				<span>Hamburguer</span>		
+			</a>
+		</div>
+		
+		<div id="divCategoriaComidasOpcao">
+			<a href="#">
+				<img src="WImagens/pizza.png" id="imgCategoriaComida"/><br/>
+				<span>Pizza</span>		
+			</a>
+		</div>
+		
+		<div id="divCategoriaComidasOpcao">
+			<a href="#">
+				<img src="WImagens/salada.jpg" id="imgCategoriaComida"/><br/>
+				<span>Salada</span>		
+			</a>
+		</div>
+		
+		<div id="divCategoriaComidasOpcao">
+			<a href="#">
+				<img src="WImagens/sobremesa.jpg" id="imgCategoriaComida"/><br/>
+				<span>Sobremesa</span>		
+			</a>
+		</div>
+	</div>
+	
+	<div>
+		<h1>Cupons de Desconto!</h1>
+		<input type="button" value="10% em Hamburguer"/><br/>
+		<input type="button" value="15% em Churrasco"/><br/>
+	</div>
+	
+	<div>
+		<h1>Histórico de Pedidos</h1>
+		<input type="button" value="#15124 McDonnis"/><br/>
+		<input type="button" value="#13671 PizzaHot"/><br/>
+		<input type="button" value="#1736 Burger Queen"/><br/>
+	</div>
+	
+	<div>
+		<h1>Conta do Usuário</h1>
+		<input type="button" value="Dados da Conta" onClick="location.href='UsuarioHistoricoDePedidos.html';"/><br/>
+		<input type="button" value="Sair da Conta" onClick="location.href='PaginaLogin.html';"/><br/>
+	</div>
+	
+<!-- Rodapé Inicio -->
+</body>
+</html>

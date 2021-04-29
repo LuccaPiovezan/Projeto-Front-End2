@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Carrinho</title>
+<link rel="stylesheet" type="text/css" href="WEcss/estilopages.css">
+
+<script>
+	function isNumberKey(evt)
+	{
+		var charCode= (evt.wich) ? evt.wich : event.keyCode;
+		
+		if (charCode > 31 && (charCode < 48 || charCode > 57))
+			return false;
+		
+		return true;
+	}
+</script>
+</head>
+<body>
+	<header>
+		<div id="divLogotipoSistema">
+			<a href="">
+				<img src="WImagens/logo.png" id="imgLogotipoSistema"/>
+			</a>
+		</div>
+		<div id="usuarioLogado">
+		Olá Nome do Usuário!
+		<br/>
+		<img src="WImagens/carrinho.png" id="imgIconeCarrinho">
+		</div>
+	</header>
+	<br/><br/>
+	<!-- Fim do Cabeçalho -->
+	
+	<div>
+		<h1>SEU PEDIDO</h1>
+		<img src="WImagens/bk.png"/>	
+	</div>
+	<br/><br/>
+	
+	<div>
+		<span>Hamburguer Artesanal - Bacon</span> <br/>
+		<span>Quantidade:3</span> <br/>
+		<span>(Exemplo de Observação, quando houver)</span> <br/>
+		<span>R$: 111,00</span> <br/><br/>
+		<input type="button" value ="Remover Item"/>
+	</div>
+	<br/><br/>
+	
+	<div>
+		<span>Pizza de Calabresa</span> <br/>
+		<span>Quantidade:1</span> <br/>
+		<span>(Exemplo de Observação, quando houver)</span> <br/>
+		<span>R$: 40,00</span> <br/><br/>
+		<input type="button" value ="Remover Item"/>
+	</div>
+	<br/><br/>
+	
+	<div>
+		<span>Taxas de Entregas</span>
+		<span>R$ 22,00</span>
+	</div>
+	<br/>
+	
+	<div>
+		<span>Valor total do Pedido</span>
+		<span>R$ 163,00</span>
+	</div>
+	<br/><br/>
+	
+	<div>
+		<span>Pagamento com Cartão de Crédito</span>
+		<br/>
+		<input type ="text" name="Cartao" placeholder="Digite o nº no verso do Cartão" onkeypress="return isNumberKey(event);"/>
+	</div>
+	
+	<div>
+		<input type="button" value="Finalizar Pedido!"/>
+		<br/>
+	</div>
+	<!-- Rodapé Inicio -->
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>BlueFood</title>
+<link rel="stylesheet" type="text/css" href="WEcss/estilopages.css">
+</head>
+<body>
+	<header>
+		<div id="divLogotipoSistema">
+			<a href="">
+				<img src="WImagens/logo.png" id="imgLogotipoSistema"/>
+			</a>
+		</div>
+		<div id="usuarioLogado">
+		Olá Nome do Restaurante!
+		</div>
+	</header>
+	<br/><br/>
+	<!-- Fim do Cabeçalho -->
+	
+	<div>
+		<h1>Comidas</h1>
+	</div>
+	
+	<div>
+		<span>Pizza de Calabresa</span><br/>
+		<span>Pizza</span><br/>
+		<span> Molho de tomate, queijo mussarela, calabresa, orégano e azeitona.</span><br/>
+		<span>R$ 40,00</span><br/>
+		<input type="button" value="Remover"/><br/><br/>
+		
+		<span>Hamburguer Artesanal - Bacon</span><br/>
+		<span>Hamburguer</span><br/>
+		<span>Hamburguer de picanha 90g, queijo prato, alface, tomate, bacon e molho especial.</span><br/>
+		<span>R$ 37,00</span><br/>
+		<input type="button" value="Remover"/><br/><br/>
+		
+		<div>
+			Eventual mensagem de Erro!
+		</div>
+		
+		<span>Cadastrar Nova Comida</span>
+		<form method ="post" action="">
+			<label for="item">Item: </label><br/>
+			<input type="text" name="item" id="item"/><br/>
+			
+			<label for="descricao">Descrição: </label><br/>
+			<input type="text" name="descricao" id="descricao"/><br/>
+			
+			<label for="preco">Preço: </label><br/>
+			<input type="text" name="preco" id="preco"/><br/>
+			
+			<label for="categoria">Categoria de Comida: </label><br/>
+			<input type="text" name="categoria" id="categoria"/><br/>
+			
+			<label for="destaque">Destaque: </label><br/>
+			<input type="checkbox" name="destaque" id="destaque"/><br/>
+			
+			<input type="button" value="Cadastrar"/><br/><br/>
+		</form>
+	</div>
+	
+	<input type="button" value="Voltar para a Home" onClick="location.href='ParceiroHome.html';" />
+	
+	<!-- Rodapé Inicio -->
+	<br/><br/>
+</body>
+</html>
